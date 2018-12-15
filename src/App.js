@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h>react redux with firebase</h>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <h>react redux with firebase</h>
+        </div>
+      </BrowserRouter>
     );
   }
 }
