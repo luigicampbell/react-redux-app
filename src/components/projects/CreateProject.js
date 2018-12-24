@@ -38,7 +38,7 @@ class CreateProject extends Component {
             </div>
 
             <div className="input-field">
-                <button className="btn pink lighten-1 z-depth-0">
+                <button className="btn pink lighten-1 z-depth-0 btn waves-effect waves-light">
                     CREATE
                 </button>
             </div>
