@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
+import moment from 'moment';
 
 const ProjectDetails = (props) => {
   // console.log(props); 
@@ -23,7 +24,7 @@ const ProjectDetails = (props) => {
 
           <div className="card-action grey lighten-4 grey-text">
             <div>Posted by { project.authorFirstName } { project.authorLasName }</div>
-            <div>DATE</div>
+            <div>{ moment( project.createdAt.toDate() ).calendar() }</div>
           </div>
         </div>
         
